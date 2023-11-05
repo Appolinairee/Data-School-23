@@ -1,0 +1,219 @@
+.context{
+    margin-top: 4rem;
+}
+
+.context h2, .objectivesPresentation h2, .participantsSection h2{
+    margin-top: 2rem;
+}
+
+.context h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.context p{
+    font-size: 18px;
+    border-left: 4px solid rgba(0, 0, 0, 0.119);
+    padding-left: 20px;
+    margin-top: 10px;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.objectivesPresentation{
+    margin-top: 4rem;
+}
+
+.objectivesPresentation h2{
+    font-size: 2.5rem;
+    margin: 20px 0;
+    font-weight: 500;
+
+}
+
+.objectivesPresentation p{
+    max-width: 800px;
+    text-align: justify;
+
+}
+
+.objectivesPresentation .objectives{
+    gap: 5%;
+}
+
+.objectivesPresentation .objectives .objectivesImage{
+    width: 50%;
+    height: 100%;
+}
+
+.objectivesPresentation .objectivesImage img{
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+.objectivesPresentation .objectives .objective{
+    align-items: start;
+    margin-top: 20px;
+    gap: 10px;
+    color: var(--colorPrimary);
+    justify-content: start;
+}
+
+.objectivesPresentation .objectives p.objDesc{
+    font-size: 18px;
+    border-left: solid rgba(0, 0, 0, 0.295);
+    padding-left: 20px;
+}
+
+.objectivesPresentation .objectives .objective i{
+    margin-top: 3px;
+    fill: var(--colorPrimary);
+    color: rgb(13, 107, 194);
+    font-size: 22px;
+}
+
+.objectivesPresentation .objectives .objective  span{
+    margin-left: 10px;
+}
+
+
+.participantsSection{
+    margin-top: 4rem;;
+}
+
+.participantsSection.sectionM{
+    margin-top: 8rem;;
+}
+
+
+.participantsSection h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.participantsSection .participants{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5%;
+    row-gap: 15px;
+}
+
+.participantsSection .participants .participant{
+    display: flex;
+    padding: 10px 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.195);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.participantsSection .addressedTopics{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    row-gap: 30px;
+}
+
+.participantsSection .adressedTopic{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.195), -1px -1px 10px rgba(0, 0, 0, 0.195);
+    border-radius: 10px;
+    text-align: left;
+    gap: 10px;
+    justify-content: start;
+    padding: 10px;
+}
+
+.participantsSection .adressedTopic img{
+    width: 130px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+
+.participantsSection.venue img{
+    width: 100%;
+    max-width: 600px;
+}
+
+@media screen and (max-width: 900px){
+    .participantsSection .addressedTopics{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .context p{
+        font-size: 17px;
+    }
+
+    .objectivesPresentation .objectives{
+        flex-direction: column;
+    }
+
+    .objectivesPresentation .objectives .objectivesImage{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+    .objectivesPresentation .objectivesImage img{
+        height: 100%;
+        min-height: 200px;
+    }
+
+    .participantsSection .participants{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .participantsSection .addressedTopics{
+        grid-template-columns: 1fr;
+    }
+
+    .participantsSection{
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .context p{
+        font-size: 16px;
+        padding-left: 10px;
+        margin: 0 5px;
+    }
+
+    .objectivesPresentation .objectives p{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .objectivesPresentation .objectives  p.objDesc{
+        font-size: 16px;
+        padding-left: 5px;
+    }
+
+    .participantsSection .participants{
+        grid-template-columns: 1fr;
+    }
+
+    .context h2, .objectivesPresentation h2, .participantsSection h2{
+        font-size: 1.8rem;
+    }
+}
+
+.footer{
+    text-align: center;
+    margin: 4rem 0 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.295);
+    padding-top: 20px;
+}
+
+.footer p{
+   margin-bottom: 20px;
+}
+
+.footer span b{
+    color: var(--primaryColor);
+}

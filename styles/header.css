@@ -1,0 +1,152 @@
+header{
+    margin: 140px 0 2rem;
+    position: relative;
+    flex-direction: row-reverse;
+    gap: 5%;
+    align-items: center;
+}
+
+header .headerImage{
+    background: white;
+    border-radius: 30px;
+    height: 400px;
+    width: 50%;
+}
+
+header .headerImage img{
+    width: 100%;
+    border-radius: 30px;
+    height: 100%;
+}
+
+header .headerContent{
+    position: relative;
+    z-index: 10;
+}
+
+header .headerContent p{
+    font-size: 18px;
+    max-width: 600px;
+}
+
+header .headerContent span{
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+header .headerContent h1{
+    margin: 30px 0 10px;
+    font-size: 2.7rem;
+}
+
+header .headerContent .live{
+    margin: 20px 0 20px 0;
+    padding: 15px 15px;
+    width: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0.459);
+    border-radius: 20px;
+}
+
+header .headerContent .buttons{
+    justify-content: start;
+    gap: 5%;
+}
+
+header .headerContent .buttons a, .buttonStyle a{
+    gap: 10px;
+    color: white;
+    background: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    padding: 10px 20px;
+}
+
+header .headerTitle.headerTitleRespon{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    header{
+       flex-direction: column;
+       margin-top: 150px;
+    }
+
+    header .headerImage{
+        height: 270px;
+        width: 100%;
+        border-radius: 30px;
+        margin-bottom: 20px;
+    }
+
+    header .headerImage img{
+        border-radius: 30px;
+    }
+
+    header .headerTitle{
+        display: none;
+    }
+
+    header .headerTitle.headerTitleRespon{
+        display: block;
+    }
+
+    
+    header .headerTitle.headerTitleRespon h1{
+        margin: 5px 0 10px;
+        font-size: 2.5rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 750px){
+    header{
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    header .headerTitle.headerTitleRespon h1{
+        font-size: 1.8rem;
+    }
+
+    header p{
+        font-size: 16px;
+    }
+
+    header .headerContent .buttons a, .buttonStyle a{
+       gap: 5px;
+       font-size: 16px;
+    }
+
+    header .headerContent .live p{
+        font-size: 14px;
+    }
+
+    header .headerContent p{
+        font-size: 16px;
+    }
+
+} 
+
+@media screen and (max-width: 330px){
+    header .headerContent .buttons{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    header .headerContent .buttons a, .buttonStyle a{
+        gap: 10px;
+        color: white;
+        background: var(--primaryColor);
+        border: 1px solid var(--primaryColor);
+        padding: 10px 20px;
+    }
+}
+
+.buttonStyle a{
+    margin: 2rem 0;
+    width: fit-content;
+    white-space: nowrap;
+    padding: 15px 10px;
+}

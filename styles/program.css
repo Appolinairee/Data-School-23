@@ -1,0 +1,67 @@
+.programs{
+    margin: 2rem 5%;
+}
+
+.content.programsSection h2{
+    margin-top: 7rem;
+}
+
+.programs .program{
+   margin-top: 5rem;
+   border-left: 4px solid rgba(0, 0, 0, 0.179);
+    padding-left: 20px;
+}
+
+.programs .program h4{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-decoration: underline var(--primaryColor);
+}
+
+.programs .program .hoursPrograms{
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+.programs .program .hoursPrograms .hProgramContent{
+    border-left: 1px solid rgba(0, 0, 0, 0.479);
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: 55px;
+}
+
+.programs .program .hoursPrograms .hProgramContent p{
+    margin-bottom: 15px;
+    max-width: 500px;
+}
+
+@media screen and (max-width: 500px) {
+    .programs{
+        margin: 1rem 3%;
+    }
+
+    .content.programsSection h2{
+        margin-top: 2rem;
+    }
+    
+    .programs .program{
+       margin-bottom: 3rem;
+       border-left: 3px solid rgba(0, 0, 0, 0.179);
+       padding-left: 10px;
+    }
+
+    .programs .program h4{
+        font-size: 1.4rem;
+    }
+
+    .programs .program .hoursPrograms{
+        margin-bottom: 40px;
+        margin-left: 5px;
+    }
+
+    .programs .program .hoursPrograms .hProgramContent{
+        padding-left: 20px;
+        padding-top: 10px;
+        margin-left: 7px;
+    }
+}

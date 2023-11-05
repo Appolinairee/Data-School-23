@@ -102,7 +102,7 @@ for (let i = 0; i < programs.length; i++) {
         else
             topic = "Topic: ";
 
-        horaireDiv += "<div class='hoursPrograms'> <i class='fa-regular fa-clock'></i> <span>" + horaire.heure1 + " – "+ horaire.heure2 +"</span>  <div class='hProgramContent'> <p>"+ topic + " " + "+ horaire.theme +"</p> <span>" + author + " <b>"+ horaire.author +"</b></span>  </div>   </div>"
+        horaireDiv += "<div class='hoursPrograms'> <i class='fa-regular fa-clock'></i> <span>" + horaire.heure1 + " – "+ horaire.heure2 +"</span>  <div class='hProgramContent'> <p>" + topic + horaire.theme +"</p> <span>" + author + " <b>"+ horaire.author +"</b></span>  </div>   </div>"
     }
     
     programDiv = "<div class='program'>"+ "<h4>" + getDayName(program.date) +": " + program.date + "</h4> " + horaireDiv + "</div>"

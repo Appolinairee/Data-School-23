@@ -100,7 +100,7 @@ for (let i = 0; i < programs.length; i++) {
                 if(horaire.author === "" ||  horaire.author === null)
                 author = "";
                 else
-                    author = "Par: ";
+                    author = "By: ";
 
                 if(horaire.theme === "" ||  horaire.theme === null)
                     topic = "";

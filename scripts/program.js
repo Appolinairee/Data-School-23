@@ -92,17 +92,23 @@ for (let i = 0; i < programs.length; i++) {
     for (let j = 0; j < program.horaires.length; j++) {
         const horaire = program.horaires[j];
         
-        if(horaire.author === "" ||  horaire.author === null)
-            author = "";
-        else
-            author = "Par: ";
+       if (horaire.theme == null || horaire.theme == "")
+            break;
+        
+        else if (horaire.theme != null || horaire.theme != "") {
 
-        if(horaire.theme === "" ||  horaire.theme === null)
-            topic = "";
-        else
-            topic = "Topic: ";
+                if(horaire.author === "" ||  horaire.author === null)
+                author = "";
+                else
+                    author = "Par: ";
 
-        horaireDiv += "<div class='hoursPrograms'> <i class='fa-regular fa-clock'></i> <span>" + horaire.heure1 + " – "+ horaire.heure2 +"</span>  <div class='hProgramContent'> <p>" + topic + horaire.theme +"</p> <span>" + author + " <b>"+ horaire.author +"</b></span>  </div>   </div>"
+                if(horaire.theme === "" ||  horaire.theme === null)
+                    topic = "";
+                else
+                    topic = "Topic: ";
+
+                horaireDiv += "<div class='hoursPrograms'> <i class='fa-regular fa-clock'></i> <span>" + horaire.heure1 + " – "+ horaire.heure2 +"</span>  <div class='hProgramContent'> <p>" + topic + horaire.theme +"</p> <span>" + author + " <b>"+ horaire.author +"</b></span>  </div>   </div>";
+        }
     }
     
     programDiv = "<div class='program'>"+ "<h4>" + getDayName(program.date) +": " + program.date + "</h4> " + horaireDiv + "</div>"

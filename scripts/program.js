@@ -66,9 +66,9 @@ var programs = [
             {heure1: "12:00", heure2: "14:00", theme: "Lunch Break", author: ""},
             {heure1: "14:00", heure2: "16:00", theme: "Case Studies of Successful AI Implementation in Education - Focus in Africa ", author: "Panel"},
             {heure1: "16:00", heure2: "16:30", theme: "Open discussions and closing marks", author: ""},
-            {heure1: "16:30", heure2: "17:00", theme: "Open discussions and closing marks", author: ""},
-            {heure1: "17:00", heure2: "17:30", theme: "Open discussions and closing marks", author: ""},
-            {heure1: "17:30", heure2: "18:00", theme: "Open discussions and closing marks", author: ""},
+            {heure1: "16:30", heure2: "17:00", theme: "", author: ""},
+            {heure1: "17:00", heure2: "17:30", theme: "", author: ""},
+            {heure1: "17:30", heure2: "18:00", theme: "", author: ""},
         ]
     },
 
